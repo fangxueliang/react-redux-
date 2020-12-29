@@ -1,0 +1,16 @@
+/* 布局样式  */
+.App_layout .ant-layout-header {
+    background: #ccc;
+}
+
+.App_layout .ant-layout-footer {
+    background: #ccc;
+}
+
+.App_layout .ant-layout-content {
+    background: #fff;
+}
+
+.App_layout .ant-layout-sider {
+    background: #fff;
+}

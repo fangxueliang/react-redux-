@@ -1,0 +1,18 @@
+/* 布局样式  */
+.Home_layout .ant-layout-header {
+    background: #ccc;
+}
+
+.Home_layout .ant-layout-footer {
+    position: fixed;
+    bottom: 0;
+    background: #ccc;
+}
+
+.Home_layout .ant-layout-content {
+    background: #fff;
+}
+
+.Home_layout .ant-layout-sider {
+    background: #fff;
+}
