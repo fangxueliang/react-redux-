@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Layout } from 'antd'
 import { MenuSider } from "./Menu/menu";
-import { HeaderCommon } from "./Header/header";
+import { HeaderCommon } from "Header/header";
 
 const { Header, Footer, Content, Sider } = Layout
 export const Main = () => {

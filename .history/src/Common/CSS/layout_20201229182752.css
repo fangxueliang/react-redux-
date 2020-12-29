@@ -1,20 +1,19 @@
 /* 布局样式  */
 .Home_layout .ant-layout-header {
-    background: #D1EEEE;
+    background: #FFF68F;
 }
 
 .Home_layout .ant-layout-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #D1EEEE;
+    background: #FFF68F;
 }
 
 .Home_layout .ant-layout-content {
     background: #fff;
 }
 
-.Home_layout .ant-layout-sider .ant-menu {
-    height: 100%;
-    background: #F0FFFF;
+.Home_layout .ant-layout-sider {
+    background: #fff;
 }

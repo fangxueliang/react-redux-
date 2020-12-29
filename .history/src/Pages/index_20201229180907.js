@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Layout } from 'antd'
 import { MenuSider } from "./Menu/menu";
-import { HeaderCommon } from "./Header/header";
+import { HeaderCommen } from "Header/header";
 
 const { Header, Footer, Content, Sider } = Layout
 export const Main = () => {
@@ -9,7 +9,7 @@ export const Main = () => {
         <Layout>
             <div className="Home_layout">
                 {/* 头部header */}
-                <Header> <HeaderCommon /> </Header>
+                <Header> <HeaderCommen /> </Header>
                 <Layout>
                     {/* 左侧导航Sider */}
                     <Sider>
@@ -18,7 +18,6 @@ export const Main = () => {
                     {/* 主要内容Content */}
                     <Content> Content </Content>
                 </Layout>
-                {/* 底部footer */}
                 <Footer> Footer </Footer>
             </div>
         </Layout>
