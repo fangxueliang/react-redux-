@@ -1,20 +1,40 @@
 /* 布局样式  */
-.Home_layout .ant-layout-header {
+.Home_layout {
+    min-height: 100%;
+}
+
+.Home_layout .Home_header {
+    height: 64px;
+    line-height: 64px;
+    padding: 0 60px;
     background: #D1EEEE;
 }
 
-.Home_layout .ant-layout-footer {
+.Home_layout .Home_footer {
     position: fixed;
     bottom: 0;
+    height: 64px;
     width: 100%;
+    padding: 0 60px;
     background: #D1EEEE;
 }
 
-.Home_layout .ant-layout-content {
-    background: #fff;
+.Home_layout .Home_sider {
+    display: inline-block;
+    height: 84vh;
+    background: #F0FFFF;
 }
 
 .Home_layout .ant-layout-sider .ant-menu {
-    height: 100%;
     background: #F0FFFF;
+}
+
+.Home_layout .Home_main {
+    display: flex;
+    height: 84vh;
+}
+
+.Home_layout .Home_content {
+    width: 100%;
+    display: inline-block;
 }

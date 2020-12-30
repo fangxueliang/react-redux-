@@ -1,0 +1,19 @@
+/* 布局样式  */
+.Home_layout {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.Home_layout .ant-layout-header {
+    background: #D1EEEE;
+}
+
+.Home_layout .ant-layout-footer {
+    width: 100%;
+    background: #D1EEEE;
+}
+
+.Home_layout .ant-layout-sider .ant-menu {
+    background: #F0FFFF;
+}
