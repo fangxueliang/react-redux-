@@ -1,6 +1,7 @@
-import { MENU } from "./action_type";
+import { MENU } from '../action_type'
+import { menuFun } from "../dataList";
 
-export const menuFun = () => ({
+const menuDataList = {
     type: MENU,
     data: {
         type: 'menu',
@@ -11,4 +12,13 @@ export const menuFun = () => ({
         { value: '起名大全', key: '4', to: '/all' },
         { value: '数据统计', key: '5', to: '/statistical' }]
     }
-})
+}
+export default (state = menuDataList, action) => {
+    switch (action.type) {
+        case MENU:
+            return state
+        default:
+            return state
+    }
+
+}
