@@ -11,7 +11,7 @@ const menuDataList = {
         { value: '数据统计', key: '5', to: '/statistical' }]
     }
 }
-const menu = (state = menuDataList, action) => {
+export default (state = menuDataList, action) => {
     switch (action.type) {
         case MENU:
             return state
@@ -23,6 +23,4 @@ const menu = (state = menuDataList, action) => {
             return state
     }
 
-}
-
-export default menu
+}//eslint-disable-next-line

@@ -1,6 +1,7 @@
 import { MENUKEY } from '../action_type'
 
-const menuKey = (state = [1], action) => {
+
+export default (state = [1], action) => {
     switch (action.type) {
         case MENUKEY:
             let newState
@@ -10,5 +11,4 @@ const menuKey = (state = [1], action) => {
             return state
     }
 
-}
-export default menuKey
+}//eslint-disable-next-line
