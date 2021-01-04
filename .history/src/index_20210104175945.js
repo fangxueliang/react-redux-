@@ -15,9 +15,8 @@ import './Common/CSS/common.css'//引入公共样式
 
 ReactDOM.render(
   <Provider className="main" store={store}>
-    <Router>
-      <Main />
-    </Router>
+    <Router>   <Main /></Router>
+
   </Provider>,
   document.getElementById('root')
 );

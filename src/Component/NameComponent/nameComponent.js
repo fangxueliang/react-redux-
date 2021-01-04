@@ -1,16 +1,15 @@
 import { Component } from "react";
 
-class HomeComponent extends Component {
+class NameComponent extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-        }
+        this.state = {}
     }
     render() {
         return (<div>
-            首页
+            起名大全
         </div>);
     }
 }
 
-export default HomeComponent;
+export default NameComponent;

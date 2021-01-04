@@ -1,7 +1,7 @@
 //menu
 import { Component } from "react";
 import { Menu } from 'antd';
-import { Link } from 'react-router-dom'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 import Storeaction from "../../Store/storeaction";
 
 class MenuComponent extends Component {
@@ -35,7 +35,9 @@ class MenuComponent extends Component {
                 {
                     dataList.map(item => (
                         <Menu.Item key={item.key}>
-                            <Link to={item.to}>{item.value}</Link>
+                            <Router>
+                                <Link to={item.to}>{item.value}</Link>
+                            </Router>
                         </Menu.Item>))
                 }
             </Menu>);

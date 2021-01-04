@@ -14,6 +14,7 @@ import Storeaction from "../Store/storeaction"
 const { Sider } = Layout
 const LOCALTION_PATH = window.location.pathname
 const ContentComponent = (props) => {
+
     return (<div>
         {/* 头部header */}
         <div className="Home_header">
@@ -23,8 +24,11 @@ const ContentComponent = (props) => {
             {/* 左侧导航Sider */}
             <div className="Home_sider">
                 <Sider>
-                    {/* 菜单标签 */}
-                    <MenuSider />
+                    {/* 因为菜单标签使用了Link标签，所以得用Router包裹 */}
+                    <Router>
+                        {/* 菜单标签 */}
+                        <MenuSider />
+                    </Router>
                 </Sider>
             </div>
             {/* 主要内容Content */}
@@ -45,13 +49,16 @@ class Main extends react.Component {
         super(props);
         this.state = {
         }
+        console.log(
+            props
+        );
     }
     render() {
         return (
             <div className="Home_layout">
+                {/* <ContentComponent dataProps={this.props} /> */}
                 {LOCALTION_PATH === '/' || LOCALTION_PATH === '/login' ? <Login history={this.props.history} /> : <ContentComponent dataProps={this.props} history={this.props.history} />}
-            </div>
-        )
+            </div>);
     }
 }
 
