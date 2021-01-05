@@ -12,6 +12,7 @@ class Login extends Component {
         }
     }
     onFinish = (values) => {
+        // 登录账号 admin 密码 123456
         if (values.username === 'admin' && values.password === "123456") {
             this.props.history.history.push('/home')
             window.location.reload()//刷新当前页面
