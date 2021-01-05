@@ -1,3 +1,4 @@
+// reducer集合
 import { connect } from "react-redux";
 
 const mapStateToProps = (state, ownProps) => { return { ...state } }

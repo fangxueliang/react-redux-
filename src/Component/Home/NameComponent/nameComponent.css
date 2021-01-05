@@ -1,0 +1,15 @@
+.NameComponent {
+    padding: 20px 10px;
+}
+
+.NameComponent .ant-list-item .ant-card {
+    color: #FFFFE0;
+    background-color: #ccccff;
+    border-radius: 6px;
+
+}
+
+.NameComponent .ant-list-item .ant-card-head-title {
+    color: #FFFFE0;
+    font-size: 18px;
+}

@@ -4,11 +4,11 @@ import {
     Route,
     Switch,
 } from 'react-router-dom'
-import HomeComponent from "../../Component/HomeComponent/homeComponent";
-import ProfileComponent from "../../Component/ProfileComponent/profileComponent";
-import SearchComponent from "../../Component/SearchComponent/searchComponent";
-import NameComponent from "../../Component/NameComponent/nameComponent";
-import StatisticalComponent from "../../Component/StatisticalComponent/statisticalComponent";
+import HomeComponent from "../../Component/Home/HomeComponent/homeComponent";
+import ProfileComponent from "../../Component/Home/ProfileComponent/profileComponent";
+import SearchComponent from "../../Component/Home/SearchComponent/searchComponent";
+import NameComponent from "../../Component/Home/NameComponent/nameComponent";
+import StatisticalComponent from "../../Component/Home/StatisticalComponent/statisticalComponent";
 
 export const ComponentRouter = () => (
     <Router>

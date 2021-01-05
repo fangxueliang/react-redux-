@@ -1,4 +1,5 @@
-import { MENU, MENUKEY } from '../action_type'
+// Menu数据源
+import { MENU } from '../action_type'
 
 const menuDataList = {
     type: 'MENU',
@@ -15,10 +16,6 @@ const menu = (state = menuDataList, action) => {
     switch (action.type) {
         case MENU:
             return state
-        case MENUKEY:
-            let newState
-            newState = JSON.parse(JSON.stringify(action))
-            return newState
         default:
             return state
     }

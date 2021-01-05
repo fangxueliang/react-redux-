@@ -1,3 +1,4 @@
+// store index
 import { createStore } from "redux";//引入redux
 import reducer from "./reducer"
 
