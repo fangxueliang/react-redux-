@@ -13,3 +13,8 @@
     color: #FFFFE0;
     font-size: 18px;
 }
+
+.NameComponent .ant-list-items {
+    overflow-y: scroll;
+    height: 44vh;
+}
