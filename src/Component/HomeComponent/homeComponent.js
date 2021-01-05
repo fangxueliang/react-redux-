@@ -6,6 +6,9 @@ class HomeComponent extends Component {
         this.state = {
         }
     }
+    componentWillReceiveProps(newProps) {
+        console.log('home---->>>', newProps);
+    }
     render() {
         return (<div>
             首页

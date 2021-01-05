@@ -13,14 +13,15 @@ class Login extends Component {
     }
     onFinish = (values) => {
         if (values.username === 'admin' && values.password === "123456") {
-            this.props.history.push('/home')
-
+            this.props.history.history.push('/home')
+            window.location.reload()//刷新当前页面
         }
     };
 
     onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
     };
+
     render() {
         return (
             <div className="login">

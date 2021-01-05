@@ -5,9 +5,6 @@ import { HeaderCommon } from "./Header/header";
 import { FooterCommon } from "./Footer/footer";
 import Login from "./Login/login";
 import { CommonRouter } from "../Router/routerIndex";
-import {
-    BrowserRouter as Router,
-} from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
 import Storeaction from "../Store/storeaction"
 
@@ -46,10 +43,11 @@ class Main extends react.Component {
         this.state = {
         }
     }
+
     render() {
         return (
             <div className="Home_layout">
-                {LOCALTION_PATH === '/' || LOCALTION_PATH === '/login' ? <Login history={this.props.history} /> : <ContentComponent dataProps={this.props} history={this.props.history} />}
+                {LOCALTION_PATH === '/' || LOCALTION_PATH === '/login' ? <Login history={this.props} /> : <ContentComponent dataProps={this.props} history={this.props.history} />}
             </div>
         )
     }
