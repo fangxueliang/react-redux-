@@ -12,8 +12,8 @@ const MessageUI = () => {
     }, [])
     return (<div>
         {message}
-        <Button onClick={() => dispatch({ type: 'MENU' })}>点击调用reducer{console.log(state)}</Button>
-        <Button onClick={() => setArr([1, 2, 3, 4])}>点击调用reducer{console.log(state)}</Button>
+        <Button onClick={() => dispatch({ type: 'MENU' })}>Menu</Button>
+        <Button onClick={() => setArr([1, 2, 3, 4])}>获取</Button>
         <List
             className="demo-loadmore-list"
             itemLayout="horizontal"
@@ -24,7 +24,7 @@ const MessageUI = () => {
                 </List.Item>
             )}
         />
-        {arr.map((item, index) => (<span key={index}>{item.name}{console.log(item)}</span>))}
+        {arr.map((item, index) => (<span key={index}>{item.name}</span>))}
     </div>)
 }
 export default MessageUI

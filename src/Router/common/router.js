@@ -10,21 +10,20 @@ import SearchComponent from "../../Component/Home/SearchComponent/searchComponen
 import NameComponent from "../../Component/Home/NameComponent/nameComponent";
 import StatisticalComponent from "../../Component/Home/StatisticalComponent/statisticalComponent";
 
-export const ComponentRouter = () => (
+export const ComponentRouter = (
     <Router>
         {/* Switch 严格匹配路由 */}
-        <Switch>
+        <Switch exact>
             {/* home页面 */}
-            <Route path="/home" component={HomeComponent} />
+            <Route path="/common/home" component={HomeComponent} />
             {/* 个人简介 */}
-            <Route path="/profile" component={ProfileComponent} />
+            <Route path="/common/profile" component={ProfileComponent} />
             {/* 个人搜索 */}
-            <Route path="/search" component={SearchComponent} />
+            <Route path="/common/search" component={SearchComponent} />
             {/* 姓名大全 */}
-            <Route path="/name" component={NameComponent} />
+            <Route path="/common/name" component={NameComponent} />
             {/* 数据统计 */}
-            <Route path="/statistical" component={StatisticalComponent} />
-   =
+            <Route path="/common/statistical" component={StatisticalComponent} />
         </Switch>
     </Router>
 )

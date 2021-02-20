@@ -11,13 +11,14 @@ class Login extends Component {
         this.state = {
         }
     }
+
     onFinish = (values) => {
         // 登录账号 admin 密码 123456
-        if (values.username === 'admin' && values.password === "123456") {
-            this.props.history.history.push('/home')
-            window.location.reload()//刷新当前页面
-        }
+        if (this.isPassWord(values))
+            this.props.history.history.push('/common/home')
+        window.location.reload()//刷新当前页面
     };
+    isPassWord = (values) => (values.username === 'admin' && values.password === "123456")
 
     onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);

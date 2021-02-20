@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import Login from "../Pages/Login/login";
 import { ComponentRouter } from "./common/router";
+import Main from "../Pages/index";
 
 const Auth = () => {
     return <Redirect exact from="/" to="/login" />
@@ -16,7 +17,9 @@ export const CommonRouter = () => (
         {/* Switch 严格匹配路由 */}
         <Switch>
             <Route path="/login" component={Login} />
-            <ComponentRouter />
+            <Route path="/common" component={Main}>
+                {ComponentRouter}
+            </Route>
             <Auth />
         </Switch>
     </Router>
